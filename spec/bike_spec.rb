@@ -1,6 +1,9 @@
-require 'boris_bikes'
+require 'bike'
+
 describe Bike do
-  it 'expects new instances of Bike to respond to the method "working?"' do
-    expect(Bike.new).to respond_to(:working?)
+
+  context 'when working? is called' do
+    it { is_expected.to respond_to :working? }
   end
+
 end
